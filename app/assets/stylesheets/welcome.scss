@@ -4,12 +4,22 @@
 // https://group-project3155-zpaden.c9users.io/welcome/index
 h1 {
     font-family: Impact, Verdana;
-    color: #D4AFFF;
+    font-size: 75px;
+    color: #001f63;
 }
 
 body
 {
     font-family: Verdana, Helvetica;
-    background-image: url("assets/images/AvengerSymbol.png");
-    background-color: #f9f9f9;
+    //background-image: url("../images/AvengerSymbol.png");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/2000px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png");
+    background-size: 687px 803px;
+    background-repeat: no-repeat;
+    background-color: #cecece;
+    background-position: center; 
+
+}
+
+p{
+    color: #191970;
 }
