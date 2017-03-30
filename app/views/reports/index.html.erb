@@ -1,9 +1,12 @@
 <h1>Listing reports</h1>
- 
+<%= link_to 'New report', new_report_path %>
 <table>
   <tr>
     <th>Title</th>
-    <th>Text</th>
+    <th>Perpatrator</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th>Email</th>
   </tr>
  
   <% @reports.each do |report| %>
