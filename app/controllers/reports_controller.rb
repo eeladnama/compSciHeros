@@ -37,6 +37,12 @@ class ReportsController < ApplicationController
     
     def index
         @reports = Report.all
+        @hash = Gmaps4rails.build_markers(@reports) do | report, marker|
+            marker.lat report.lat
+            marker.lng report.lng
+            marker.title report.title
+            marker.infowindow report.desc
+        end
     end
     
     def destroy
