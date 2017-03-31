@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 2.5'
 #this is the gem we use for geocoding locations to lat and long.
 gem 'geokit'
 
+#this will be doing the heavy work to create our google map
+gem 'gmaps4rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
