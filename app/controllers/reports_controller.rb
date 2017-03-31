@@ -8,13 +8,18 @@ class ReportsController < ApplicationController
     end
     
     def create
-        @report = Report.new(report_params)
+         rp = report_params
+        ll = getGeocode(rp[:location]).split(',')
+        rp[:lat] = ll[0]
+        rp[:lng] = ll[1]
+        @report = Report.new(rp)
         
         if @report.save
-            redirect_to @report
+            redirect_to action: "index"
         else
          render 'new'
         end
+        
     end
     
     def edit
@@ -42,8 +47,16 @@ class ReportsController < ApplicationController
     end
     
     private
-    def report_params
-        params.require(:report).permit(:title, :location, :desc,
-        :email)
-    end
+    
+    #given a string uses google api to convert to lat&long.
+        def getGeocode loc_string
+            Geokit::Geocoders::GoogleGeocoder.api_key = Rails.application.secrets.GOOGLE_MAPS_API_KEY
+            req = Geokit::Geocoders::GoogleGeocoder.geocode(loc_string)
+            return req.ll
+        end
+        
+        def report_params
+            params.require(:report).permit(:title, :location, :desc,
+            :email)
+        end
 end
