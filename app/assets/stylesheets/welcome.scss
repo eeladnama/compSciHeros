@@ -3,24 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // https://group-project3155-zpaden.c9users.io/welcome/index
 // Color Palette: http://www.color-hex.com/color-palette/25436
+
+
 h1 {
-    font-family: Impact, Verdana;
-    font-size: 75px;
+    font-family: Georgia,serif;
+    font-size: 46px;
     color: #191970;
+    position: center;
 }
 
 body
 {
-    font-family: Verdana, Helvetica;
+    
     //background-image: url("../images/AvengerSymbol.png");
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/2000px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png");
-    background-size: 687px 803px;
+    background-size: 600px;
     background-repeat: no-repeat;
     background-color: #cecece;
-    background-position: center; 
-
+    background-position: right top;
 }
 
 p{
-    color: #191970;
+    font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    color: #251c38;
 }
