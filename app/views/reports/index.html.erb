@@ -1,5 +1,5 @@
 
-<h1>Listing reports</h1>
+<h2>Listing reports</h2>
 
 <div style='width: 800px;'> 
     <div id="map" style='width: 800px; height: 400px;'></div>
@@ -15,14 +15,14 @@
 </script>
   
   
-<%= link_to 'New report', new_report_path %>
+<p><a><%= link_to 'Make a Report', new_report_path %></a></p>
 
-<table>
+<table class="table">
   <tr>
-    <th>Title</th>
-    <th>Location</th>
-    <th>Description</th>
-    <th>Email</th>
+    <th class="row-1 row-concern">Concern</th>
+    <th class="row-2 row-location">Location</th>
+    <th class="row-3 row-descrip">Description</th>
+    <th class="row-4 row-email">Email</th>
   </tr>
  
   <% @reports.each do |report| %>

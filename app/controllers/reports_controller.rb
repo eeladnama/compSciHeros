@@ -46,13 +46,15 @@ class ReportsController < ApplicationController
     end
     
     def destroy
-        @report =Report.find(params[:id])
+        @report = Report.find(params[:id])
+        
+        ReportMailer.destroyed_mail(@report).deliver_now
         @report.destroy
         
         redirect_to reports_path
     end
     
-    private
+    private #~~~~~PRIVATE METHODS BELOW HERE
     
     #given a string uses google api to convert to lat&long.
         def getGeocode loc_string

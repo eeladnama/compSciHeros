@@ -10,9 +10,52 @@ div {
         bottom: 0;
         left: 0;
         right: 0;
-    }
+    }    
 
     margin: auto;
+    margin-bottom: 45px;
 }
 
+
+
+.table {
+    
+     table-layout: auto;
+     width: 100%;
+     white-space: nowrap;
+}
+.talbe td {
+     white-space: normal;
+     overflow: scroll;
+     text-overflow: ellipsis;
+}
+
+/* Column widths are based on these cells */
+.row-concern {
+     width: 10%;
+}
+.row-location {
+     width: 20%;
+}
+.row-descrip {
+     width: 30%;
+}
+.row-email {
+     width: 20%;
+}
+
+
+.table th {
+     background: #e2af37;
+     color: white;
+}
+.table td,
+.talbe th {
+     text-align: left;
+     padding: 5px 10px;
+}
+
+.table tr:nth-child(even) {
+     background: #94bad0;
+}
 

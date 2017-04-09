@@ -5,24 +5,61 @@
 // Color Palette: http://www.color-hex.com/color-palette/25436
 
 h1 {
-    font-family: Georgia,serif;
-    font-size: 46px;
-    color: #191970;
+    color: #fff;
+	font-family: 'Cormorant Garamond';
+	border-bottom: 3px solid #e2af37;
+	font-size: 75px;
+	font-weight: 1000;
+	line-height: 72px;
+	letter-spacing: 5px;
+	margin-bottom: 57px;
+	text-align: center;
+	text-indent: 24px;
+}
+
+h2{
+    font-family: Marvel;
     text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-bottom: 3px solid #e2af37;
+    margin-bottom: 25px;
 }
 
 body
 {
     //background-image: url("../images/AvengerSymbol.png");
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/2000px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png");
-    background-size: 600px;
-    background-repeat: no-repeat;
-    background-color: #cecece;
+    //background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/2000px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png");
+    //background-size: 600px;
+    //background-repeat: no-repeat;
+    background-color: #9a2627;
     background-position: right top;
 }
 
-p{
-    font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-    color: #251c38;
+p {
+	color: #fff;
+
+	font-family: 'Cormorant Garamond';
+	font-size: 28px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 48px;
+	max-width: 640px;
+	margin: 0 auto 48px;
+	text-align: center;
+}
+a {
+	color: #e66c7e;	border-bottom: 2px solid #e66c7e;
+	font-family: 'Cormorant Garamond';
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a:hover {
+	color: #fff;
+	border-bottom: 2px solid #fff;
 }
 
