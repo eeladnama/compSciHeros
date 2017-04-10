@@ -38,6 +38,8 @@ gem 'geokit'
 #this will be doing the heavy work to create our google map
 gem 'gmaps4rails'
 
+#this gem is used for easy timing of our auto-destruction task.
+gem 'whenever'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
