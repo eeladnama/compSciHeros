@@ -1,0 +1,23 @@
+<h3> Heroes </h3>
+
+<p> Select your HERO </p>
+<%= link_to 'Hero', new_heroes_path %>
+
+<table>
+    <th>Name</th>
+    <th>Ability</th>
+<% @Heroes.each do |hero| %>
+    <tr>
+        <td><% hero.Name %></td>
+        <td><% hero.Ability %></td>
+        
+        <td><% link_to 'show', hero_path(hero) %></td>
+        <td><% link_to 'Edit', edit_report_path%></td>
+        <td><% link_to 'destroy' 
+                                hero_path(hero)
+                                method: delete
+                                data:{confirm: 'are you sure?'%></td>
+        
+    </tr>
+    <% end %>
+</table>
