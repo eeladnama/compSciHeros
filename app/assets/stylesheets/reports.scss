@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+//Map
 div {
     
     id {
@@ -17,16 +18,16 @@ div {
 }
 
 
-.table {
-    
+table {
+     
      table-layout: auto;
      width: 100%;
      white-space: nowrap;
 }
-.talbe td {
+td {
      white-space: normal;
-     overflow: scroll;
-     text-overflow: ellipsis;
+     //overflow: scroll;
+     //text-overflow: ellipsis;
 }
 
 /* Column widths are based on these cells */
@@ -43,18 +44,18 @@ div {
      width: 20%;
 }
 
-
-.table th {
-     background: #e2af37;
+th {
+     background: #94bad0;
      color: white;
+     text-align: center;
+     padding: 5px 10px;
 }
-.table td,
-.talbe th {
+td {
      text-align: left;
      padding: 5px 10px;
 }
 
-.table tr:nth-child(even) {
-     background: #94bad0;
+tr:nth-child(even) {
+     background: #ffffff;
 }
 

@@ -5,24 +5,25 @@
 // Color Palette: http://www.color-hex.com/color-palette/25436
 
 h1 {
-    font-family: Georgia,serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 46px;
     color: #191970;
     text-align: center;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #33394c;
 }
 
 body
 {
     //background-image: url("../images/AvengerSymbol.png");
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/2000px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png");
-    background-size: 600px;
+    background-size: 250px;
     background-repeat: no-repeat;
-    background-color: #cecece;
+    background-color: #eff0f4;
     background-position: right top;
-}
-
-
-p{
-    font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
 }
 

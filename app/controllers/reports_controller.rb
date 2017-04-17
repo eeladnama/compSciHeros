@@ -45,13 +45,18 @@ class ReportsController < ApplicationController
         end
     end
     
+    #destroy method to use when destroyed by user (ie, via webpage)
     def destroy
         @report = Report.find(params[:id])
-        
         ReportMailer.destroyed_mail(@report).deliver_now
         @report.destroy
-        
         redirect_to reports_path
+    end
+    
+    def destroy_by_id(id_to_destroy)
+        @report = @reports
+        ReportMailer.destroyed_mail(@report).deliver_now
+        @report.destroy
     end
     
     private #~~~~~PRIVATE METHODS BELOW HERE
