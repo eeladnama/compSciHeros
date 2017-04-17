@@ -6,6 +6,7 @@
 <table>
     <th>Name</th>
     <th>Ability</th>
+    
 <% @Heroes.each do |hero| %>
     <tr>
         <td><% hero.Name %></td>
@@ -15,7 +16,7 @@
         <td><% link_to 'Edit', edit_report_path%></td>
         <td><% link_to 'destroy' 
                                 hero_path(hero)
-                                method: delete
+                                method: :delete,
                                 data:{confirm: 'are you sure?'%></td>
         
     </tr>
