@@ -29,7 +29,8 @@ class ReportsController < ApplicationController
         
         #this code adds the object's destruction as a delayed job.
         time_delay = Time.now + 60 # later edit this to have some sort of randomness
-        @report.delay(:run_at => time_delay).destroy()
+       # @report.delay(:run_at => time_delay).destroy()
+       ReportsController.delay(:run_at => time_delay).destroy_report(@report[:id])
         
     end
     
@@ -62,6 +63,13 @@ class ReportsController < ApplicationController
         ReportMailer.destroyed_mail(@report).deliver_now
         @report.destroy
         redirect_to reports_path
+    end
+    
+    def self.destroy_report(id)
+        @report = Report.find(id)
+        ReportMailer.destroyed_mail(@report).deliver_now
+        @report.destroy
+        head :no_content
     end
     
     private #~~~~~PRIVATE METHODS BELOW HERE
