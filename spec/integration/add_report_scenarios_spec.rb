@@ -1,7 +1,7 @@
 require 'rails_helper.rb'
 
 feature"User adds a report" do
-    scenario "User successfully adds a new report from the listing reports page" do
+    scenario "User successfully navigates to the new report page from the listing reports page" do
         visit reports_path
         expect(page).to have_content("Listing Reports")
         click_link "New Report"

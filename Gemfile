@@ -39,7 +39,7 @@ gem 'geokit'
 gem 'gmaps4rails'
 
 #this gem is used for easy timing of our auto-destruction task.
-gem 'whenever'
+gem 'delayed_job_active_record'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
