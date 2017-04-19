@@ -8,17 +8,28 @@ class ReportsController < ApplicationController
     end
     
     def create
-         rp = report_params
+        rp = report_params
+        
+        #ll is a string containing both lattitude and longitude from
+        #google's geo-coder
         ll = getGeocode(rp[:location]).split(',')
+        #after splitting we set them to the object before saving.
         rp[:lat] = ll[0]
         rp[:lng] = ll[1]
         @report = Report.new(rp)
         
+        
+        
+        #finally, saving the object.
         if @report.save
             redirect_to action: "index"
         else
          render 'new'
         end
+        
+        #this code adds the object's destruction as a delayed job.
+        time_delay = Time.now + 60 # later edit this to have some sort of randomness
+        @report.delay(:run_at => time_delay).destroy()
         
     end
     
@@ -51,12 +62,6 @@ class ReportsController < ApplicationController
         ReportMailer.destroyed_mail(@report).deliver_now
         @report.destroy
         redirect_to reports_path
-    end
-    
-    def destroy_by_id(id_to_destroy)
-        @report = @reports
-        ReportMailer.destroyed_mail(@report).deliver_now
-        @report.destroy
     end
     
     private #~~~~~PRIVATE METHODS BELOW HERE
