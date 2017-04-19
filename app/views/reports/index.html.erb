@@ -13,10 +13,11 @@
         handler.fitMapToBounds();
     });
 </script>
-  
-  
-<button class="button button3"><%= link_to 'New Report', new_report_path %></button>
-<button class="button button3" a = "/reports/new"></button>
+
+<div style="text-align:center;">
+<button class = "button button3" onclick="location.href='/reports/new'">New Report</button>
+</div>
+
 <table>
   <tr>
     <th>Title</th>
