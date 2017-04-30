@@ -1,16 +1,16 @@
 <h3> Heroes </h3>
 
-<p> Select your HERO </p>
-<%= link_to 'Hero', new_heroes_path %>
+<p> Current Super HERO </p>
+<%= link_to 'SuperHero', new_heroes_path %>
 
 <table>
-    <th>Name</th>
-    <th>Ability</th>
+    <th>Name:</th>
+    <th>Bio:</th>
     
 <% @Heroes.each do |hero| %>
     <tr>
-        <td><% hero.Name %></td>
-        <td><% hero.Ability %></td>
+        <td><% hero.name %></td>
+        <td><% hero.bio %></td>
         
         <td><% link_to 'show', hero_path(hero) %></td>
         <td><% link_to 'Edit', edit_report_path%></td>

@@ -1,0 +1,9 @@
+//This is the old HTML Welcome page
+
+<h1>COMP SCI HEROES Inc.</h1>
+
+<p>Do you need a hero to help?</p>
+
+<div style="text-align:center;">
+    <button class = "button button3" onclick="location.href='/reports/'">Enter Site.</button>
+</div>

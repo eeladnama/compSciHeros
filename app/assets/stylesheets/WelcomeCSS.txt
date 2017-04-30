@@ -1,0 +1,54 @@
+//This is the old welcome CSS
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 46px;
+    color: #191970;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #33394c;
+}
+
+p{
+    text-align: center;
+}
+
+body
+{
+    //background-image: url("../images/AvengerSymbol.png");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/2000px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-color: #eff0f4;
+    background-position: right top;
+}
+
+.button {
+    background-color: #529ecc; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #529ecc;
+}
+
+.button1:hover {
+    background-color: #529ecc;
+    color: white;
+}
