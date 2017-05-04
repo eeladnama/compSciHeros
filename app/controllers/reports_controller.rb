@@ -65,6 +65,7 @@ class ReportsController < ApplicationController
         redirect_to reports_path
     end
     
+    # this method used by timer system.
     def self.destroy_report(id)
         @report = Report.find(id)
         ReportMailer.destroyed_mail(@report).deliver_now

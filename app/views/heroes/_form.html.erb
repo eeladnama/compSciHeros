@@ -1,11 +1,11 @@
-<%= form_for @hero do |g| %>
+<%= form_for @hero do |f| %>
  
   <% if @hero.errors.any? %>
     <div id="error_explanation">
-      <h3>
+      <h2>
         <%= pluralize(@hero.errors.count, "error") %> prohibited
         this hero from being saved:
-      </h3>
+      </h2>
       <ul>
         <% @hero.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -15,17 +15,17 @@
   <% end %>
  
   <p>
-    <%= g.label :name %><br>
-    <%= g.text_field :name %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </p>
   
   <p>
-    <%= g.label :bio %><br>
-    <%= g.text_field :bio %>
+    <%= f.label :biography %><br>
+    <%= f.text_field :biography %>
   </p>
-  
+ 
   <p>
-    <%= g.submit %>
+    <%= f.submit %>
   </p>
  
 <% end %>
