@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #246fb4;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  margin-bottom: 0;
+  color: #f2f2f2;
+  float: left;
+  padding: 0 150px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0px 0px;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #94bad0;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #94bad0;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.button {
+  background-color: #246fb4;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #246fb4; }
+
+.button3:hover {
+  background-color: #001f63;
+  color: white; }
+
+input[type=text] {
+  width: 50%;
+  padding: 12px 12px;
+  border: 2px solid #001f63;
+  top: -20px;
+  left: 20px; }
+
+textarea {
+  width: 50%;
+  height: 200px;
+  padding: 12px 12px;
+  border: 2px solid #001f63; }
+
+input[type=button], input[type=submit] {
+  background-color: #246fb4;
+  float: left;
+  border: none;
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none; }
+
+#map-container{
+  margin: auto;
+  margin-bottom: 45px; }
+
+
+table {
+  table-layout: auto;
+  width: 100%;
+  white-space: nowrap; 
+  
+}
+
+td {
+  white-space: normal; }
+
+.row-concern {
+  width: 10%; }
+
+.row-location {
+  width: 20%; }
+
+.row-descrip {
+  width: 30%; }
+
+.row-email {
+  width: 20%; }
+
+th {
+  background: #94bad0;
+  color: white;
+  text-align: center;
+  padding: 5px 10px; }
+
+td {
+  text-align: left;
+  padding: 5px 10px; }
+
+tr:nth-child(even) {
+  background: #ffffff; }
+  
+
+/*# sourceMappingURL=reports.css.map */

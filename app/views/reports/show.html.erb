@@ -1,18 +1,34 @@
-<p>
-    <strong>Title:</strong>
-    <%= @report.title %>
-</p> 
+<header>
+    <div class="container">
+      <h2 class="logo">Report</h2>
+      <nav>
+        <ul>
+          <li><a href="/welcome/index">Home</a></li>
+          <li><a href ="/reports/">Listing Reports</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/heroes">Heroes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<p>
-    <strong>Location:</strong>
-    <%= @report.location %>
-</p> 
-<p>
-    <strong>Description:</strong>
-    <%= @report.desc %>
-</p>
-<p>
-    <strong>Email:</strong>
-    <%= @report.email %>
-</p>
-<%= link_to 'Report List', reports_path %>
+<div class = "article">
+    <p>
+        <strong>Title:</strong>
+        <%= @report.title %>
+    </p> 
+    
+    <p>
+        <strong>Location:</strong>
+        <%= @report.location %>
+    </p> 
+    <p>
+        <strong>Description:</strong>
+        <%= @report.desc %>
+    </p>
+    <p>
+        <strong>Email:</strong>
+        <%= @report.email %>
+    </p>
+    <%= link_to 'Report List', reports_path %>
+</div>

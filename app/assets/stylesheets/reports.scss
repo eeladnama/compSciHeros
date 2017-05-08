@@ -19,7 +19,7 @@ $lightblue: #246fb4;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -53,28 +53,14 @@ textarea{
         
 input[type=button], input[type=submit] {
     background-color: $lightblue;
-    float: right;
+    float: left;
     border: none;
     color: white;
     padding: 16px 20px;
     text-decoration: none;
 }
 
-//Map
-div {
-    
-    id {
-        position: absolute;
-        top:0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }    
-
-    margin: auto;
-    margin-bottom: 45px;
-}
-
+//Table
 
 table {
      
@@ -84,11 +70,9 @@ table {
 }
 td {
      white-space: normal;
-     //overflow: scroll;
-     //text-overflow: ellipsis;
 }
 
-/* Column widths are based on these cells */
+// Column widths are based on these cells 
 .row-concern {
      width: 10%;
 }
@@ -116,5 +100,4 @@ td {
 tr:nth-child(even) {
      background: #ffffff;
 }
-
 
