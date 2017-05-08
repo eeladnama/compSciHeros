@@ -4,9 +4,45 @@
 
 .testimonial{
     
-    margin: 50px 80px 50px;
+    border: 1px solid #246fb4;
+    padding: 50px 100px 50px 100px;
+    margin: 50px 150px 50px 150px;
 }
 
-.button {
-   margin: center;
+.button3 {
+     margin: 0px 300px;
+}
+
+p {
+    
+    color: #246fb4;
+}
+
+#desc{
+    
+     padding-left: 100px;
+     color: #000;
+     font-style: italic;
+
+}
+
+hr{
+    border-top: 1px dotted #8c8b8b
+}
+
+#form{
+    margin: 0px 300px;
+    width: 100%;
+      padding: 12px 40px;
+      top: -20px;
+      left: 20px;
+    
+}
+
+#make_testimonial_button{
+    margin-top: 30px;
+}
+
+#navbar_p_elements{
+    color:white;
 }

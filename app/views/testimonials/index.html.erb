@@ -3,38 +3,35 @@
       <h2 class="logo">Testimonials</h2>
       <nav>
         <ul>
-          <li><a href="/welcome/index">Home</a></li>
-          <li><a href ="/reports/">Listing Reports</a></li>
-          <li><a href="/testimonials">Testimonials</a></li>
-          <li><a href="/heroes">Heroes</a></li>
+          <li>   <a href ="/reports/"><p id="navbar_p_elements">Listing Reports</p></a></li>
+          <li><a href="/testimonials"><p id="navbar_p_elements">Testimonials</p></a></li>
+          <li>      <a href="/heroes"><p id="navbar_p_elements">Heroes</p></a></li>
         </ul>
       </nav>
     </div>
   </header>
-
-
-<div class = "testimonial">
-  <button class = "button button3" onclick="location.href='/testimonials/new'">Make A Testimonial!</button>
-  <% @testimonials.each do |testimonial| %>
   
-      <p class = "title">
-        <strong>Title:</strong> 
-        <%= testimonial.title %>
-    </p>
+<button class = "button button3" onclick="location.href='/testimonials/new'" id = "make_testimonial_button">Make A Testimonial</button>
+<div class = "testimonial">
+  
+  <% @testimonials.each do |testimonial| %>
     
-    <p class = "title">
-        <strong>Name:</strong> 
-        <%= testimonial.name %>
-    </p>
+      <p>
+          <strong>Title:</strong> 
+          <%= testimonial.title %>
+      </p>
+      
+      <p>
+          <strong>Name:</strong> 
+          <%= testimonial.name %>
+      </p>
+      
+      <p id = "desc">
+          <%= testimonial.desc %>
+      </p>
     
-    <p class = "testimonial" style = 'margin: 1px 40px 1px;'>
-        <%= testimonial.desc %>
-    </p>
-    
-    <hr style = " margin:5px 80px 5px;" />
+    <hr>
     
   <% end %>
-  
-  <button class = "button button3" onclick="location.href='/reports/'">Back</button>
 </div>
 

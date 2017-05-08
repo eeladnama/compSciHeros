@@ -4,7 +4,8 @@
 // https://group-project3155-zpaden.c9users.io/welcome/index
 // Color Palette: http://www.color-hex.com/color-palette/25436
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:700);
 
 //colors
 $grey: #eff0f4;
@@ -25,6 +26,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  
 }
 
 body {
@@ -47,23 +49,23 @@ body {
 }
 
 h1 {
-  color: $blue;
-  font-size: 1.25em;
-  font-weight: 900;
-  margin: 0 0 2em;
+  left: 0;
+  line-height: 200px;
+  margin: auto;
   
-  @media (min-width: 450px) {
-    font-size: 1.75em;
-  }
-  
-  @media (min-width: 760px) {
-    font-size: 3.25em;
-  }
-  
-  @media (min-width: 900px) {
-    font-size: 5.25em;
-    margin: 0 0 1em;
-  }
+  margin-top: -200px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  font-size: 5em;
+  color: #94bad0;
+  -webkit-text-shadow: 5px 5px 0 $blue;
+  -moz-text-shadow: 5px 5px 0 $blue;
+  -o-text-shadow: 5px 5px 0 $blue;
+  -ms-text-shadow: 5px 5px 0 $blue;
+  text-shadow: 5px 5px 0 $blue;
 }
 
 

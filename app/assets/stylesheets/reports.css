@@ -21,7 +21,7 @@ header::after {
   margin-bottom: 0;
   color: #f2f2f2;
   float: left;
-  padding: 0 150px;
+  padding: 0px 150px;
 }
 
 nav {
@@ -37,8 +37,7 @@ nav ul {
 nav li {
   display: inline-block;
   margin-left: 70px;
-  padding-top: 23px;
-
+  padding-top: 14px;
   position: relative;
 }
 
@@ -75,6 +74,7 @@ nav a:hover::before {
   border: none;
   color: white;
   padding: 16px 32px;
+  border-radius: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -82,16 +82,27 @@ nav a:hover::before {
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  cursor: pointer; }
+  cursor: pointer; 
+  
+}
 
 .button3 {
   background-color: white;
   color: black;
-  border: 2px solid #246fb4; }
+  border: 2px solid #94bad0; }
 
 .button3:hover {
-  background-color: #001f63;
+  background-color: #94bad0;
   color: white; }
+  
+#form{
+      margin: 0px 300px;
+      width: 100%;
+      padding: 12px 40px;
+      top: -20px;
+      left: 20px;
+    
+}
 
 input[type=text] {
   width: 50%;
@@ -117,6 +128,14 @@ input[type=button], input[type=submit] {
 #map-container{
   margin: auto;
   margin-bottom: 45px; }
+  
+#map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 22.25%;
+    padding-top: 30px;
+    position: relative;
+}
 
 
 table {
@@ -153,6 +172,10 @@ td {
 
 tr:nth-child(even) {
   background: #ffffff; }
+  
+#navbar_lis {
+  color: white;
+}
   
 
 /*# sourceMappingURL=reports.css.map */
